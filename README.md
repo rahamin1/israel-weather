@@ -1,4 +1,4 @@
-# Israel Weather Application
+# An Israel Weather Application
 An application showing the weather in Israel (UI is in Hebrew)
 
 ## Installation
