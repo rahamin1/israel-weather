@@ -1,0 +1,150 @@
+export const shoreXML =
+  'https://ims.data.gov.il/sites/default/files/isr_sea.xml';
+
+// displayMode for shores:
+//              ALL - show shore icon + name + temp in one line
+//              ALL2 - show shore icon + name + temp in two lines
+//              WAVES - show shore icon + waves only
+//              ICON - show shore icon only
+//              NONE - no info
+export const shoresTable = {
+  "Southern Coast": {
+    code: 213, displayMode: 'ALL2',
+    coord: { latitude: 32.03, longitude: 34.30 },
+    heb: "החוף הדרומי" },
+  "Northern Coast": {
+    code: 212, displayMode: 'WAVES',
+    coord: { latitude: 32.81, longitude: 34.55 },
+    heb: "החוף הצפוני" },
+  "Sea of Galilee": {
+    code: 211, displayMode: 'NONE',
+    coord: { latitude: 32.90, longitude: 35.56 },
+    heb: "כנרת" },
+  "Gulf of Elat": {
+    code: 214, displayMode: 'NONE',
+    coord: { latitude: 29.42, longitude: 34.85 },
+    heb: "מפרץ אילת" }
+};
+
+export const shoreCodes = {
+  0: { text: "אין נתונים",
+    imageName: require("../images/shores/s-sea-calm.png") },
+  10: { text: "דומם",
+    imageName: require("../images/shores/s-sea-calm.png") },
+  20: { text: "שקט",
+    imageName: require("../images/shores/s-sea-calm.png") },
+  30: { text: "נוח",
+    imageName: require("../images/shores/s-sea-calm.png") },
+  40: { text: "נוח עד גלי",
+    imageName: require("../images/shores/s-sea-calm.png") },
+  50: { text: "גלי",
+    imageName: require("../images/shores/s-sea-waves.png") },
+  55: { text: "גלי עד גבה גלים",
+    imageName: require("../images/shores/s-sea-waves.png") },
+  60: { text: "גבה גלים",
+    imageName: require("../images/shores/s-sea-waves.png") },
+  70: { text: "גבה גלים עד רוגש",
+    imageName: require("../images/shores/s-sea-waves.png") },
+  80: { text: "רוגש",
+    imageName: require("../images/shores/s-sea-waves.png") },
+  90: { text: "רוגש עד סוער",
+    imageName: require("../images/shores/s-sea-waves.png") },
+  110: { text: "סוער",
+    imageName: require("../images/shores/s-sea-waves.png") },
+  120: { text: "סוער עד גועש",
+    imageName: require("../images/shores/s-sea-waves.png") },
+  130: { text: "גועש",
+    imageName: require("../images/shores/s-sea-waves.png") },
+  140: { text: "גועש עד זועף",
+    imageName: require("../images/shores/s-sea-waves.png") },
+  150: { text: "זועף",
+    imageName: require("../images/shores/s-sea-waves.png") },
+  160: { text: "זועף מאוד",
+    imageName: require("../images/shores/s-sea-waves.png") },
+  161: { text: "נוח בתחילה. ייעשה גלי",
+    imageName: require("../images/shores/s-sea-mixed.png") },
+  162: { text: "נוח. במשך היום ייעשה גלי",
+    imageName: require("../images/shores/s-sea-mixed.png") },
+  163: { text: "נוח. ייעשה גלי עד גבה גלים מחר.",
+    imageName: require("../images/shores/s-sea-mixed.png") },
+  164: { text: "נוח. ייעשה גלי עד גבה גלים",
+    imageName: require("../images/shores/s-sea-mixed.png") },
+  165: { text: "נוח עד גלי. ייעשה גבה גלים",
+    imageName: require("../images/shores/s-sea-mixed.png") },
+  166: { text: "נוח בגדה המערבית, גלי בגדה המזרחית",
+    imageName: require("../images/shores/s-sea-mixed.png") },
+  167: { text: "נוח עד גלי. ייעשה גלי עד גבה גלים",
+    imageName: require("../images/shores/s-sea-mixed.png") },
+  168: { text: "גלי. ייעשה גבה גלים",
+    imageName: require("../images/shores/s-sea-waves.png") },
+  169: { text: "נוח עד גלי. ייעשה גבה גלים עד רוגש",
+    imageName: require("../images/shores/s-sea-mixed.png") },
+  170: { text: "גלי בגדה המערבית, גבה גלים בגדה המזרחית",
+    imageName: require("../images/shores/s-sea-waves.png") },
+  171: { text: "גלי עד גבה גלים. ייעשה גבה גלים עד רוגש",
+    imageName: require("../images/shores/s-sea-waves.png") }
+};
+
+// shore codes created beacuse of the Android 7.0+ bug
+// not displaying images that are children of markers.
+// Therefore, images are props to markers. Since for images
+// props it is impossible to specify width and height, the exact
+// image size is provided (smaller images)
+export const shoreCodesA7 = {
+  0: { text: "אין נתונים",
+    imageName: require("../images/shores-a7/s-sea-calm-90.png") },
+  10: { text: "דומם",
+    imageName: require("../images/shores-a7/s-sea-calm-90.png") },
+  20: { text: "שקט",
+    imageName: require("../images/shores-a7/s-sea-calm-90.png") },
+  30: { text: "נוח",
+    imageName: require("../images/shores-a7/s-sea-calm-90.png") },
+  40: { text: "נוח עד גלי",
+    imageName: require("../images/shores-a7/s-sea-calm-90.png") },
+  50: { text: "גלי",
+    imageName: require("../images/shores-a7/s-sea-waves-90.png") },
+  55: { text: "גלי עד גבה גלים",
+    imageName: require("../images/shores-a7/s-sea-waves-90.png") },
+  60: { text: "גבה גלים",
+    imageName: require("../images/shores-a7/s-sea-waves-90.png") },
+  70: { text: "גבה גלים עד רוגש",
+    imageName: require("../images/shores-a7/s-sea-waves-90.png") },
+  80: { text: "רוגש",
+    imageName: require("../images/shores-a7/s-sea-waves-90.png") },
+  90: { text: "רוגש עד סוער",
+    imageName: require("../images/shores-a7/s-sea-waves-90.png") },
+  110: { text: "סוער",
+    imageName: require("../images/shores-a7/s-sea-waves-90.png") },
+  120: { text: "סוער עד גועש",
+    imageName: require("../images/shores-a7/s-sea-waves-90.png") },
+  130: { text: "גועש",
+    imageName: require("../images/shores-a7/s-sea-waves-90.png") },
+  140: { text: "גועש עד זועף",
+    imageName: require("../images/shores-a7/s-sea-waves-90.png") },
+  150: { text: "זועף",
+    imageName: require("../images/shores-a7/s-sea-waves-90.png") },
+  160: { text: "זועף מאוד",
+    imageName: require("../images/shores-a7/s-sea-waves-90.png") },
+  161: { text: "נוח בתחילה. ייעשה גלי",
+    imageName: require("../images/shores-a7/s-sea-mixed-90.png") },
+  162: { text: "נוח. במשך היום ייעשה גלי",
+    imageName: require("../images/shores-a7/s-sea-mixed-90.png") },
+  163: { text: "נוח. ייעשה גלי עד גבה גלים מחר.",
+    imageName: require("../images/shores-a7/s-sea-mixed-90.png") },
+  164: { text: "נוח. ייעשה גלי עד גבה גלים",
+    imageName: require("../images/shores-a7/s-sea-mixed-90.png") },
+  165: { text: "נוח עד גלי. ייעשה גבה גלים",
+    imageName: require("../images/shores-a7/s-sea-mixed-90.png") },
+  166: { text: "נוח בגדה המערבית, גלי בגדה המזרחית",
+    imageName: require("../images/shores-a7/s-sea-mixed-90.png") },
+  167: { text: "נוח עד גלי. ייעשה גלי עד גבה גלים",
+    imageName: require("../images/shores-a7/s-sea-mixed-90.png") },
+  168: { text: "גלי. ייעשה גבה גלים",
+    imageName: require("../images/shores-a7/s-sea-waves-90.png") },
+  169: { text: "נוח עד גלי. ייעשה גבה גלים עד רוגש",
+    imageName: require("../images/shores-a7/s-sea-mixed-90.png") },
+  170: { text: "גלי בגדה המערבית, גבה גלים בגדה המזרחית",
+    imageName: require("../images/shores-a7/s-sea-waves-90.png") },
+  171: { text: "גלי עד גבה גלים. ייעשה גבה גלים עד רוגש",
+    imageName: require("../images/shores-a7/s-sea-waves-90.png") }
+};

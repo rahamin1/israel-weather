@@ -1,0 +1,49 @@
+{
+  "expo": {
+    "name": "israel-weather",
+    "description": "Displaying the weather in Israel",
+    "slug": "Israel-Weather",
+    "privacy": "public",
+    "sdkVersion": "27.0.0",
+    "platforms": ["ios", "android"],
+    "version": "2.5.1",
+    "orientation": "default",
+    "icon": "./assets/icon.png",
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "assets/*",
+      "src/images/*/*",
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.yossiglass.israelWeather",
+      "splash": {
+        "image": "./assets/splash.png",
+        "tabletImage": "./assets/splash-med.png",
+        "resizeMode": "cover",
+        "backgroundColor": "#ffffff"
+      },
+    },
+    "android": {
+      "package": "com.yossiglass.israelWeather",
+      "config": {
+          "googleMaps": {
+            "apiKey": "AIzaSyBrEAbBx-0tBQoiPMUx6nqGq7PPd-6RV6Q"
+          }
+      },
+      "splash": {
+        "ldpi": "./assets/splash.png",
+        "mdpi": "./assets/splash.png",
+        "hdpi": "./assets/splash.png",
+        "xhdpi": "./assets/splash-med.png",
+        "xxhdpi": "./assets/splash-med.png",
+        "xxxhdpi": "./assets/splash-med.png",
+        "resizeMode": "cover",
+        "backgroundColor": "#ffffff"
+      },
+    }
+  }
+}
